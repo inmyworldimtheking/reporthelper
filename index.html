@@ -550,7 +550,7 @@
 
             const userQuery = `이 추출 원본 텍스트를 공공기관 최고 품질의 추진계획 서식으로 교정해라:\n\n${rawContent}`;
 
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${activeKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${activeKey}`;
 
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
